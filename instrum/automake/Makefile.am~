@@ -1,0 +1,15 @@
+SUBDIRS = src
+TESTS = test.sh
+checkk:
+	./test.sh
+man:
+	cat mandoc print_msgdoc > manual
+help:
+	@echo Введите \"make\" для сборки программы.
+	@echo Введите \"make install\" после для установки.
+	@echo Введите \"make uninstall\" для удаления программы.
+	@echo Введите \"make clean\" для удаления временных файлов.
+	@echo Введите \"make distclean\" для полной очистки.
+	@echo Введите \"make check\" для тестового запуска проекта.
+	@echo Введите \"make dist\" для создания дистрибутива проекта.
+	@echo Введите \"make man\" для просмотра мануала
